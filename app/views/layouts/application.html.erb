@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <ul>
+    <li><a href="/posts">Posts</a></li>
+    <li><%= link_to "Categorias", categorias_path %></li>
+    <li><%= link_to "Especialidades", especialidades_path %></li>
+  </ul>
+
+<%= yield %>
+
+</body>
+</html>

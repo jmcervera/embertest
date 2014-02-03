@@ -1,0 +1,16 @@
+<div id="ember-app-container">
+</div>
+
+<script>
+$(document).ready(function(){
+
+  // App.Router.router.transitionTo('<%= request.fullpath %>');
+
+  // This is what I would like be able to do. 
+  // Instead I have to set a property in App to be used 
+  // for redirecting from IndexRoute
+  App.set('jumpToRoute', "<%= request.fullpath %>" );
+  
+  App.advanceReadiness();
+});
+</script>
